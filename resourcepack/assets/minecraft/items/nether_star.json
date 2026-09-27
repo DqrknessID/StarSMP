@@ -1,0 +1,23 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/nether_star"
+    },
+    "cases": [
+      { "when": "aqualith", "model": { "type": "minecraft:model", "model": "starsmp:item/star_aqualith" } },
+      { "when": "pyrelion", "model": { "type": "minecraft:model", "model": "starsmp:item/star_pyrelion" } },
+      { "when": "zephyros", "model": { "type": "minecraft:model", "model": "starsmp:item/star_zephyros" } },
+      { "when": "gravaryn", "model": { "type": "minecraft:model", "model": "starsmp:item/star_gravaryn" } },
+      { "when": "voltyra", "model": { "type": "minecraft:model", "model": "starsmp:item/star_voltyra" } },
+      { "when": "verdaryn", "model": { "type": "minecraft:model", "model": "starsmp:item/star_verdaryn" } },
+      { "when": "umbryx", "model": { "type": "minecraft:model", "model": "starsmp:item/star_umbryx" } },
+      { "when": "luminary", "model": { "type": "minecraft:model", "model": "starsmp:item/star_luminary" } },
+      { "when": "aetherion", "model": { "type": "minecraft:model", "model": "starsmp:item/star_aetherion" } },
+      { "when": "chronovar", "model": { "type": "minecraft:model", "model": "starsmp:item/star_chronovar" } }
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+# =========================================================================
+#  _____ _______       _____   _____ __  __ _____  
+# / ____|__   __|/\   |  __ \ / ____|  \/  |  __ \ 
+#| (___    | |  /  \  | |__) | (___ | \  / | |__) |
+# \___ \   | | / /\ \ |  _  / \___ \| |\/| |  ___/ 
+# ____) |  | |/ ____ \| | \ \ ____) | |  | | |     
+#|_____/   |_/_/    \_\_|  \_\_____/|_|  |_|_|     
+# =========================================================================
+
+# ---- Messages ----
+messages:
+  prefix: "&8[&e⭐ StarSMP&8] "
+  no-permission: "&cYou don't have permission to use this."
+  received-star: "&aYou have received the &e%star%&a!"
+  tier-up: "&aYour Star has ascended to &e%tier%&a!"
+  tier-down: "&cYour Star shattered down to &e%tier%&c..."
+  shattered-star: "&4Your Star is Shattered! Repair it before gaining essence."
+  already-max-tier: "&6Your Star is already at Zenith (max tier)!"
+  no-star: "&cYou don't have a Star yet."
+  star-passive-hint: "&7Keep your Star anywhere in your &finventory &7to activate passives."
+  essence-gained: "&d+1 Star Essence &7from your kill!"
+  cooldown: "&cAbility on cooldown! &7%seconds%s remaining."
+
+# ---- Global Settings ----
+global:
+  players-drop-skull: true
+  death-history-max-size: 20
+  
+# ---- System ----
+system:
+  started: true
+
+# ---- Items ----
+items:
+  star-item:
+    material: NETHER_STAR
+    base-model-data: 100
+  essence:
+    material: ECHO_SHARD
+    model-data: 200
+    name: "&d✦ Star Essence"
+    craftable: true
+  reparation-tool:
+    material: BLAZE_ROD
+    model-data: 201
+    name: "&6⚙ Star Reparation Tool"
+    craftable: true
+  reroll-token:
+    material: COMPASS
+    model-data: 202
+    name: "&b↺ Star Reroll Token"
+    craftable: true
+  star-fragment:
+    material: BLAZE_POWDER
+    model-data: 203
+    name: "&aFragmented Starlight"
+    craftable: true
+  cosmic-judgement:
+    craftable: true
+    hit-cooldown: 25
+    hit-cooldown-enabled: true
+    ability-cooldown: 60
+    freeze-radius: 9
+    freeze-duration: 6
+    launch-height: 11
+    smash-bonus-damage-multiplier: 1.40
+  spear-falling-star:
+    craftable: true
+    ability-cooldown: 180
+    overdrive-duration-ticks: 600
+    overdrive-speed-level: 5
+    bleed-duration-ticks: 100
+  crown-astral-supremacy:
+    craftable: true
+    aura-radius: 20
+    health-bonus: 40.0
+    cdr-multiplier: 0.5
+    parry-chance: 0.15
+  starlight-oath:
+    craftable: true
+    ability-cooldown: 120
+    vow-duration-ticks: 600
+    strength-level: 2
+    speed-level: 1
+    shield-break-duration-ticks: 100
+  nebula-guard:
+    craftable: true
+    ability-cooldown: 90
+    repulsion-duration-ticks: 100
+    repulsion-radius: 6
+    repulsion-strength: 2.0
+
+# ---- Tier System ----
+tiers:
+  shattered-no-drop: true
+
+# ---- Altar & Ritual ----
+altar:
+  enabled: true
+  locations:
+  - world,14,70,38             # List of "world,x,y,z"
+  indestructible: true
+  discord-webhook-url: "https://discord.com/api/webhooks/1500729066104295424/ZMUjl3X67rgpcBWotxAUD5uqz4WgVg76Aa-kiD4CBjR83uSqQyI5p3nCtL8S8HJqZonL"
+
+  # If false, players cannot craft Legendary items or perform rituals.
+  # If true, craftability depends on individual limits and 'craftable' toggles.
+  legendary-craftable: true
+
+  # Global Limiter: If true, only one person can own these items at a time
+  MaceLimiter: true
+  SpearLimiter: true
+
+  # Per-item Crafting Limits (0 = disabled, -1 = unlimited)
+  COSMIC_JUDGEMENT: 0
+  SPEAR_FALLING_STAR: 0
+  CROWN_ASTRAL_SUPREMACY: 0
+  STARLIGHT_OATH: 0
+  NEBULA_GUARD: 0
+  MACE: 0
+  DIAMOND_SPEAR: 0
+  WOODEN_SPEAR: 0
+  IRON_SPEAR: 0
+  STONE_SPEAR: 0
+  GOLD_SPEAR: 0
+  COPPER_SPEAR: 0
+
+# ---- Gacha (Spin GUI) ----
+gacha:
+  spin-ticks: 60
+  initial-delay: 2
+  slowdown-start: 40
+  sound-spin: BLOCK_NOTE_BLOCK_HAT
+  sound-win: UI_TOAST_CHALLENGE_COMPLETE
+  title: "&5&l✦ STAR GACHA ✦"
+
+# ---- Stars ----
+stars:
+  default-cooldown: 90
+  aqualith:
+    cooldown: 90
+    passive-underwater-speed: 1
+    ability1-duration-ticks: 60
+    ability2-damage-reduction: 0.40
+  pyrelion:
+    cooldown: 100
+    passive-burn-chance: 0.05
+    passive-burn-damage: 1.0
+    passive-hot-biome-bonus: 0.15
+    active-fire-radius: 6
+    active-burn-duration-ticks: 60
+    active-burst-damage: 2.5
+  zephyros:
+    cooldown: 90
+    passive-hit-counter: 12
+    passive-speed-duration: 40
+    active-knockback-strength: 2.5
+    active-launch-height: 1.2
+  gravaryn:
+    cooldown: 105
+    ability2-resistance-duration: 120
+    ability3-root-duration: 60
+    active-radius: 8
+    active-damage-per-tick: 1.0
+  voltyra:
+    cooldown: 110
+    passive-max-charge: 100
+    passive-charge-per-hit: 8
+    proc-bonus-damage: 2.0
+    tier2-proc-every-hits: 5
+    tier2-lightning-damage: 2.0
+  verdaryn:
+    cooldown: 120
+    passive-regen-interval: 100
+    passive-poison-chance: 0.05
+    active-dome-duration-ticks: 200
+    active-dome-radius: 3
+    active-health-suppression-percent: 0.15
+    active-burst-damage-multiplier: 1.2
+  umbryx:
+    cooldown: 240
+    ability1-range: 30
+    ability3-duration: 1200
+    passive-blind-chance: 0.05
+    active-lunge-strength: 1.8
+    dome-repulsion-strength: 0.5
+    # Dome Boundary: If true, prevents both entry and exit.
+    dome-trap-enabled: true
+  luminary:
+    cooldown: 100
+    ability2-duration: 100
+    passive-heal-chance: 0.10
+    passive-heal-amount: 1.0
+  aetherion:
+    cooldown: 95
+    passive-pull-strength: 0.3
+    # Massive Crit: Multiplies Minecraft critical hits (Jump-hit). 
+    # Total damage = Base * 1.5 (Vanilla Crit) * Multiplier.
+    # e.g. 1.3 multiplier means a crit deals 1.95x total damage.
+    passive-crit-multiplier: 1.15
+    active-blackhole-radius: 5.5
+    active-blackhole-duration-ticks: 80
+    active-blackhole-damage-per-sec: 1.5
+    active-final-damage: 7.5
+  chronovar:
+    cooldown: 120
+    passive-cdr: 0.10
+    passive-haste-level: 0
+    tier2-haste-level: 1
+    ability3-duration: 40
+    active-time-stop-radius: 8
+    active-time-stop-duration-ticks: 45
+
+cooldowns:
+  mace-hit: 25
+  mace-hit-enabled: true

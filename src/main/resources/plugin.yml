@@ -1,0 +1,34 @@
+name: StarSMP
+version: '1.0-SNAPSHOT'
+main: org.dqrknessid.starsmp.StarSMP
+api-version: '1.21'
+prefix: StarSMP
+authors: [ dqrknessid ]
+description: A competitive Minecraft plugin featuring a celestial Star system with unique tiered passives, abilities, and legendary artifacts.
+softdepend: [PlaceholderAPI]
+
+commands:
+  stars:
+    description: Main command for StarSMP
+    aliases: [ star ]
+    usage: /stars <subcommand>
+    permission: starsmp.use
+  ability1:
+    description: Triggers your Star's ability (Tier 1+).
+    usage: /ability1
+  controls:
+    description: "Manage Star ability triggers"
+  trust:
+    description: "Trust a player to ignore your abilities"
+  untrust:
+    description: "Untrust a player"
+  trustlist:
+    description: "List all trusted players"
+
+permissions:
+  starsmp.use:
+    description: Basic access to StarSMP.
+    default: true
+  starsmp.admin:
+    description: Full admin access to StarSMP commands.
+    default: op

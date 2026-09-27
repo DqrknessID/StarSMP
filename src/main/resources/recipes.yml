@@ -1,0 +1,106 @@
+# ================================
+#        StarSMP Recipes
+# ================================
+
+# Note: Ritual delay is in seconds.
+# 10 mins = 600s, 15 mins = 900s
+
+star-essence:
+  ritual-delay-seconds: 0
+  shape:
+    - "F C G"
+    - "K P O"
+    - "G C F"
+  ingredients:
+    F: STAR_FRAGMENT
+    C: CLOCK
+    G: GOLDEN_APPLE
+    K: TRIAL_KEY
+    P: PLAYER_HEAD
+    O: OMINOUS_TRIAL_KEY
+
+star-fragment:
+  ritual-delay-seconds: 0
+  shape:
+    - "D A D"
+    - "A C A"
+    - "D A D"
+  ingredients:
+    D: DIAMOND
+    A: AMETHYST_SHARD
+    C: CLOCK
+
+reroll-token:
+  ritual-delay-seconds: 600
+  shape:
+    - "W E W"
+    - "E N E"
+    - "W E W"
+  ingredients:
+    W: WITHER_SKELETON_SKULL
+    E: STAR_ESSENCE
+    N: NETHERITE_INGOT
+
+spear-falling-star:
+  ritual-delay-seconds: 600
+  shape:
+    - "E P E"
+    - "I D I"
+    - "E B E"
+  ingredients:
+    E: STAR_ESSENCE
+    P: PLAYER_HEAD
+    I: NETHERITE_INGOT
+    D: DIAMOND_SPEAR
+    B: BREEZE_ROD
+
+reparation-tool:
+  ritual-delay-seconds: 600
+  shape:
+    - "E D E"
+    - "P N P"
+    - "E D E"
+  ingredients:
+    E: STAR_ESSENCE
+    D: DIAMOND
+    P: PLAYER_HEAD
+    N: NETHERITE_INGOT
+
+crown-astral-supremacy:
+  ritual-delay-seconds: 900
+  shape:
+    - "P E P"
+    - "E H E"
+    - "G B G"
+  ingredients:
+    P: PLAYER_HEAD
+    E: STAR_ESSENCE
+    H: NETHERITE_HELMET
+    G: ENCHANTED_GOLDEN_APPLE
+    B: NETHERITE_BLOCK
+
+cosmic-judgement:
+  ritual-delay-seconds: 900
+  shape:
+    - "E P E"
+    - "I M I"
+    - "E W E"
+  ingredients:
+    E: STAR_ESSENCE
+    P: PLAYER_HEAD
+    I: PACKED_ICE
+    M: MACE
+    W: WIND_CHARGE
+
+starlight-oath:
+  ritual-delay-seconds: 900
+  shape:
+    - "E B E"
+    - "W S W"
+    - "E G E"
+  ingredients:
+    E: STAR_ESSENCE
+    B: NETHERITE_BLOCK
+    W: WITHER_SKELETON_SKULL
+    S: NETHERITE_SWORD
+    G: ENCHANTED_GOLDEN_APPLE

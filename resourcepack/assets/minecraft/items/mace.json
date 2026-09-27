@@ -1,0 +1,20 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/mace"
+    },
+    "cases": [
+      {
+        "when": "cosmic_judgement",
+        "model": {
+          "type": "minecraft:model",
+          "model": "starsmp:item/cosmic_judgement"
+        }
+      }
+    ]
+  }
+}

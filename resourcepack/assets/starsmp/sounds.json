@@ -1,0 +1,32 @@
+{
+    "item.cosmic_judgement.heavenfall_impact": {
+        "sounds": [
+            {
+                "name": "starsmp/item/cosmic_judgement/heavenfall_impact",
+                "volume": 2.0,
+                "pitch": 0.8,
+                "stream": false
+            }
+        ]
+    },
+    "item.cosmic_judgement.meteor_strike": {
+        "sounds": [
+            {
+                "name": "starsmp/item/cosmic_judgement/meteor_strike",
+                "volume": 1.0,
+                "pitch": 1.0,
+                "stream": false
+            }
+        ]
+    },
+    "item.cosmic_judgement.comet_trail": {
+        "sounds": [
+            {
+                "name": "starsmp/item/cosmic_judgement/comet_trail",
+                "volume": 0.6,
+                "pitch": 1.2,
+                "stream": false
+            }
+        ]
+    }
+}
